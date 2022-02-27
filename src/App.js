@@ -1,10 +1,10 @@
 import './App.css';
-import ConnectTwitter from './components/ConnectTwitter';
+import PrimaryButton from './components/PrimaryButton';
 
 function App() {
   return (
-    <div className='bg-blue-100 flex items-center justify-center w-full h-screen'>
-      <ConnectTwitter></ConnectTwitter>
+    <div className='bg-blue-100 h-screen w-screen'>
+      <PrimaryButton text='Connect to twitter'></PrimaryButton>
     </div>
   );
 }
