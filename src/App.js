@@ -1,11 +1,11 @@
-import logo from './logo.svg';
 import './App.css';
+import ConnectTwitter from './components/ConnectTwitter';
 
 function App() {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+    <div className='bg-blue-100 flex items-center justify-center w-full h-screen'>
+      <ConnectTwitter></ConnectTwitter>
+    </div>
   );
 }
 
