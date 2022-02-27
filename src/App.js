@@ -1,10 +1,11 @@
 import './App.css';
-import PrimaryButton from './components/PrimaryButton';
+import Step1 from './components/Step1';
 
 function App() {
   return (
-    <div className='bg-blue-100 h-screen w-screen'>
-      <PrimaryButton text='Connect to twitter'></PrimaryButton>
+    <div className='bg-blue-100 dark:bg-gray-900 h-screen w-screen flex items-center justify-start relative flex-col'>
+      <h5 className='m-12 font-bold text-4xl text-black dark:text-white'>Tag random followers</h5>
+      <Step1></Step1>
     </div>
   );
 }
