@@ -1,11 +1,10 @@
-import { useRef, useState } from "react";
+import { useRef } from "react";
 
-export default function Step1() {
-    const [handle, setHandle] = useState('');
+export default function Step1(props) {
     const inputEl = useRef(null);
 
     const onConnect = () => {
-        setHandle(inputEl.current.value);
+        props.setHandle(inputEl.current.value);
         inputEl.current.value = '';
     }
 
@@ -19,7 +18,7 @@ export default function Step1() {
             </div>
 
             {
-                handle ? <p className="mt-3 texg-lg font-semibold text-gray-900 dark:text-white">Your handle is @{handle}</p> : ''
+                props.handle ? <p className="mt-3 texg-lg font-semibold text-gray-900 dark:text-white">Your handle is @{props.handle}</p> : ''
             }
         </a>
     );
